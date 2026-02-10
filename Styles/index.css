@@ -13,7 +13,7 @@
     display: block;
 } 
 
-.videoContainer h1{color:white; margin-top:40%;width: 100%;text-align: center;transform: translateY(50%);}
+.videoContainer h1{color:white; margin-top:40%;width: 90%;text-align: center;transform: translateY(50%);}
 
 .videoContainer::after{content: "";background-color: rgba(0, 0, 0, 0.335);position: absolute;top:0;bottom: 0;left: 0;width: 100%;margin-bottom: 5px;}
 
@@ -28,7 +28,7 @@
 
 .contentContainer {margin-top: 20px;display: block;}
 
-.reviewsSection .carousel-item{background-color: aliceblue;border: 3px solid rgba(5, 4, 4, 0.215);border-radius: 20px;margin-top: 20%;}
+.reviewsSection .carousel-item{background-color: aliceblue;border: 3px solid rgba(5, 4, 4, 0.741);border-radius: 20px;margin-top: 20%;padding: 20px;}
 
 
 
@@ -88,7 +88,7 @@ h1 {
     font-size: clamp(24px, 5vw, 48px);
     margin-bottom: 20px;
     margin-top: 20px;
-   white-space: nowrap;
+   
     
 }
 
