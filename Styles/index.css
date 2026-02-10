@@ -1,0 +1,189 @@
+*{box-sizing: border-box;}
+
+
+.headerSection video{width:100%;margin-top: 70px;}
+
+
+
+.videoContainer{position: relative;
+    
+    width: 100%;
+    height: -webkit-calc(50% - 18px);
+    height: calc(5% - 18px); 
+    display: block;
+} 
+
+.videoContainer h1{color:white; margin-top:40%;width: 100%;text-align: center;transform: translateY(50%);}
+
+.videoContainer::after{content: "";background-color: rgba(0, 0, 0, 0.335);position: absolute;top:0;bottom: 0;left: 0;width: 100%;margin-bottom: 5px;}
+
+.hero-content{position: absolute;top: 0;left: 50%;transform: translateX(-50%);z-index: 2;width: 70%;}
+
+ .contentContainer .btn{display: block;margin: 0 auto;margin-top: 20px;border-radius: 20px;padding: 10px;background-color: rgb(0, 8, 255);}
+
+ .OurWorkSection p{ margin: 20px;text-align: center;}
+
+
+.carousel-item .stars{font-size: 22px;}
+
+.contentContainer {margin-top: 20px;display: block;}
+
+.reviewsSection .carousel-item{background-color: aliceblue;border: 3px solid rgba(5, 4, 4, 0.215);border-radius: 20px;margin-top: 20%;}
+
+
+
+
+.reviewsSection{background-color: rgba(10, 14, 14, 0.105);border-radius: 20px;width: 90%;margin: 0 auto;position: relative;min-height:80vh;padding: 20px;; }
+
+.reviews{padding-top: 40px;}
+
+ 
+
+
+
+.card1,
+.card2,
+.card3{position: relative;;}
+
+ .cardInner::before{content: "";background-color: rgba(209, 191, 191, 0.255);top:0;bottom: 0;left: 0;width: 100%;position: absolute;border-radius: 20px;}
+
+.card1{background-image: url("../Images/4B79BAA4-7BE8-487C-9538-F2A0CABF9A63.jpg");background-size:cover ;background-position:90%;background-repeat: no-repeat;}
+
+
+.card2{background-image: url("../Images/9992027E-3674-4167-988E-60B382F34B50.jpg");background-size: cover;background-position: 90%;background-repeat: no-repeat;}
+
+
+.card3{background-image: url("../Images/photo-output 6.jpg");background-size: cover;background-position: 90%;background-repeat: no-repeat;}
+
+.card1,
+.card2,
+.card3{border: 1px solid;margin-top: 20px;border-radius: 20px;margin: 20px;padding: 20px;width: 100%;}
+
+
+.cardContainer{padding-right: 40px}
+
+.cardContainer h3{text-align: center;font-weight: bolder;z-index: 100;position: relative;color: black;font-size: 32px;}
+.cardContainer p{z-index: 2;position: relative;color: black;font-weight: bold;font-size: 16px;}
+
+.cardContainer ul{width: 200px;;margin: 0 auto;display: block;z-index: 2;position: relative;}
+.cardContainer li{list-style: circle;color: black;font-size: 17px;}
+
+
+.OurWorkSection{background-color: rgb(200, 209, 206);}
+
+.OurWorkSection h2{padding-top: 50px;}
+
+.OurWorkSection .carousel{padding-bottom: 20px;}
+
+.carousel{margin: 10px;}
+
+
+.contentContainer img{border-radius: 10px;}
+
+.hero-items{display: flex;justify-content: center;}
+
+.hero-items p{margin-left: 20px;margin-top: 20px;}
+
+h1 {
+    font-size: clamp(24px, 5vw, 48px);
+    margin-bottom: 20px;
+    margin-top: 20px;
+   white-space: nowrap;
+    
+}
+
+h2 {
+    font-size: clamp(20px, 4vw, 36px);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: clamp(18px, 3.5vw, 30px);
+    margin-bottom: 20px;
+     margin-top: 20px;
+}
+
+p, ol, ul {
+    font-size: clamp(17px, 2.5vw, 22px);
+    line-height: 1.6;
+    
+}
+
+button{width:clamp(170px, 40vw, 250px) ;height:clamp(60px, 5vw, 100px)}
+
+p{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+footer{background-color: rgb(32, 32, 32);color: white;padding-bottom:20px;border-radius: 20px;margin: 10px;}
+
+
+footer h3,
+footer p{margin: 20px;width: 95%;text-align: left;}
+
+footer h3{padding-top: 20px;}
+
+footer a{margin-left: 20px;text-decoration: none;}
+footer img{margin-left: 3px;}
+
+h2{text-align: center;}
+
+.cardContainer{display: flex;align-items: center;flex-direction: column;margin: 20px;}
+
+
+
+@media(min-width:1200px){
+
+  .headerSection video{height: 650px;object-fit: cover;}
+  
+  .OurWorkSection .carousel-inner {
+  border-radius: 20px !important;
+  overflow: hidden !important;
+}
+
+.OurWorkSection .carousel-inner{height: 600px;}
+  
+  .OurWorkSection .carousel-item img{
+    height: 800px;
+    object-fit: cover;
+  }
+.cardContainer h2{margin-top: 30px;}
+  
+.reviewsSection .carousel {
+  min-height: 450px; 
+width: 60%;
+ margin: 0 auto;
+  position: relative;
+}
+
+.reviewsSection .carousel-inner {
+  min-height: 450px;
+ 
+}
+
+.reviewsSection .carousel-item {
+  background-color: aliceblue;
+  border: 3px solid rgba(5, 4, 4, 0.215);
+  border-radius: 20px;
+  margin-top: 6%;
+  min-height: 350px; 
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.reviewsSection{border-radius:0;width: 100%;background-color: rgba(128, 128, 128, 0.133); }
+
+.videoContainer h1{ margin-top:30%;}
+
+  .card1,
+  .card2,
+  .card3{background-size: contain;background-position: right;}
+
+  footer{display: grid;grid-template-columns: 1fr 1fr;padding: 20px;line-height: 10px !important}
+  
+.OurWorkSection{margin-bottom: -10px;}
+  
+}

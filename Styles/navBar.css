@@ -1,0 +1,92 @@
+*{box-sizing: border-box;}
+
+body{margin: 0;}
+
+.navContainer{width: 100%;}
+
+.navBar{display: flex;position: relative;width: 100%;background-color: rgb(34, 34, 35);height: 70px;transition: all 1.2s;border-bottom: 1px solid white;position: fixed;z-index: 3;}
+
+.navBar ul{display: none;}
+
+.Active ul li{margin-top: 10px;font-weight: bolder;font-size: larger;}
+
+.Active ul li a:hover{color: blue;}
+
+.Active{height: 300px;}
+
+.Active ul {display: block;position: absolute;top: 50%;left: 50%;transform: translateX(-80% );}
+
+.Navbtn{width: 30px;height: 30px;position: absolute;left: 95%;transform: translateX(-95%);background: none;border: none;cursor: pointer;margin-top: -5px;}
+
+ul{display: flex;margin-left: 20px;list-style: none;}
+
+ul li a{margin-left: 30px;text-decoration: none;padding: 20px;color: white;}
+
+.line1 {display: inline-block;width: 20px;height: 3px;background-color: rgb(244, 239, 239);margin-bottom: -15px;transition: all 1.2s;}
+
+.line2 {display: inline-block;width: 20px;height: 3px;background-color: rgb(247, 242, 242);}
+
+.line3 {display: inline-block;width: 20px;height: 3px;background-color: rgb(244, 238, 238);margin-bottom: 15px;transition: all 1.2s;}
+
+
+.Active .line2{opacity: 0;transition: all 1.2s;}
+
+.Active .line1{transform: rotate(40deg);position: relative;top: 30%;transition: all 1.2s;width: 22px }
+.Active .line3{transform: rotate(-40deg);position: relative;top: -32%; transition: all 1.2s;width: 22px }
+
+
+
+.navBar ul li a{
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.Active ul li:nth-child(1) a {
+  animation: slideIn 0.5s forwards;
+}
+
+.Active ul li:nth-child(2) a {
+  animation: slideIn 0.5s 0.2s forwards;
+}
+
+.Active ul li:nth-child(3) a {
+  animation: slideIn 0.5s 0.4s forwards;
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+@media(min-width:1200px){
+
+  .navBar ul {
+    display: flex !important; /* Override display: none */
+    flex-direction: row;
+    position: static; /* Remove absolute positioning */
+    transform: none; /* Remove transform */
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    height: 100%;
+  }
+
+  .navBar ul li a {
+    opacity: 1;
+    transform: none; /* Remove transform */
+  }
+
+.navBar ul li a:hover{color:  blue;}
+
+  .Navbtn {
+    display: none; /* Hide hamburger on desktop */
+  }
+
+  .navBar {
+    justify-content: space-between; /* Optional: space out content */
+  }
+}
