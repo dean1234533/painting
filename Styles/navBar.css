@@ -8,13 +8,13 @@ body{margin: 0;}
 
 .navBar ul{display: none;}
 
-.Active ul li{margin-top: 10px;font-weight: bolder;font-size: larger;}
+.Active ul li{font-weight: bolder;font-size: larger;margin-top: 10px;}
 
 .Active ul li a:hover{color: blue;}
 
-.Active{height: 300px;}
+.Active{height: 400px;}
 
-.Active ul {display: block;position: absolute;top: 50%;left: 50%;transform: translateX(-80% );}
+.Active ul {display: block;position: absolute;top: 40%;left: 50%;transform: translateX(-80% );text-align: center;font-weight: bolder;}
 
 .Navbtn{width: 30px;height: 30px;position: absolute;left: 95%;transform: translateX(-95%);background: none;border: none;cursor: pointer;margin-top: -5px;}
 
@@ -31,8 +31,8 @@ ul li a{margin-left: 30px;text-decoration: none;padding: 20px;color: white;}
 
 .Active .line2{opacity: 0;transition: all 1.2s;}
 
-.Active .line1{transform: rotate(40deg);position: relative;top: 30%;transition: all 1.2s;width: 22px }
-.Active .line3{transform: rotate(-40deg);position: relative;top: -32%; transition: all 1.2s;width: 22px }
+.Active .line1{transform: rotate(40deg);position: relative;top: 30%;transition: all 1.2s;width: 22px !important }
+.Active .line3{transform: rotate(-40deg);position: relative;top: -32%; transition: all 1.2s;width: 22px !important }
 
 
 
@@ -51,6 +51,14 @@ ul li a{margin-left: 30px;text-decoration: none;padding: 20px;color: white;}
 
 .Active ul li:nth-child(3) a {
   animation: slideIn 0.5s 0.4s forwards;
+}
+
+.Active ul li:nth-child(4) a {
+  animation: slideIn 0.5s 0.6s forwards;
+}
+
+.Active ul li:nth-child(5) a {
+  animation: slideIn 0.5s 0.8s forwards;
 }
 
 @keyframes slideIn {

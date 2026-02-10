@@ -16,9 +16,11 @@
 <nav class="navBar">
 
     <ul>
-<li><a href="#">Home</a></li>
-<li><a href="#">Pricing</a></li>
-<li><a href="#">About</a></li>
+<li><a href="#home">Home</a></li>
+<li><a href="#Portfolio">Portfolio</a></li>
+<li><a href="#reviews">Reviews</a></li>
+<li><a href="#Services">Services</a></li>
+<li><a href="#contact">Contact</a></li>
 </ul>
 
 <button class="Navbtn">
@@ -36,13 +38,13 @@
 
         
 
-   
+   <div id="home"></div>
 <section class="headerSection">
 
 
 <div class="videoContainer">
 <video  class="object-fit-cover" autoplay muted loop playsinline>
-<source src="./Video/4771315-uhd_3840_2160_24fps.mp4" type="video/mp4">
+<source src="./Video/4771315-uhd_3840_2160_24fps-compressed.MP4" type="video/mp4">
 </video>
 
 <div class="hero-content">
@@ -55,8 +57,9 @@
 </section>
 
 <div class="contentContainer">
+<div class="hero-text">
 <p>High-quality house painting in London, carried out personally with care and precision. Using premium paints and a sharp eye for detail, I deliver clean, long-lasting finishes that make your home look its best.</p>
-
+</div>
 
 
 <button type="button" class="btn btn-primary">Get Your Free Quote</button>
@@ -72,14 +75,22 @@
 
 </div>
  
-
+ <div id="Portfolio"></div>
 <section class="OurWorkSection">
+
+  <div data-aos="fade-up-right">
 <h2>Recent Work</h2>
+  </div>
 
+<div data-aos="fade-up-right">
+<hr>
+</div>
+
+<div data-aos="fade-up-right">
 <p>See real painting projects showcasing clean finishes and expert craftsmanship.</p>
+</div>
 
-
-
+<div data-aos="fade-up-right">
 <div id="carouselExample" class="carousel slide">
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -88,6 +99,7 @@
     <div class="carousel-item">
       <img src="./Images/skibka-gun-1694106_1280 3.jpg" class="d-block w-100" alt="...">
     </div>
+  </div>
     
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -102,9 +114,14 @@
 
 </section>
 
+<div data-aos="fade-up-right">
 <section class="reviewsSection">
-<h2 class="reviews">Our Reviews</h2>
 
+
+   <div id="reviews"></div>
+  <div  data-aos="fade-up-right">
+<h2 class="reviews">Our Reviews</h2>
+</div>
 
 
 <div id="carouselExampleIndicators" class="carousel slide">
@@ -154,19 +171,23 @@
   </button>
 </div>
 
-
+</div>
 
  
 
 
 </section>
 
-
+ <div id="services"></div>
 <div class="cardContainer">
+  <div data-aos="fade-up-right">
 <h2>Expert Painting Services</h2>
+<hr>
+</div>
 
+<div data-aos="fade-up-right">
 <p>Flawless finishes for London homes, done with care</p>
-
+</div>
 
 <div data-aos="fade-up-right">
 <div class="card1">
@@ -228,12 +249,18 @@
 
 </div>
 
+ <div id="contact"></div>
+<div data-aos="fade-up-right">
 <h2>Ready to Elevate Your Home?</h2>
+</div>
 
+<div data-aos="fade-up-right">
 <button type="button" class="btn btn-primary">Get Your Free Quote</button>
+</div>
 
+<div data-aos="fade-up-right">
 <p>Request a complimentary quote and bring your vision to life.</p>
-
+</div>
 
 </div>
 
@@ -242,7 +269,8 @@
 <div class="footerItems1">
 <h3>Get in Touch</h3>
 
-<p>PHONE</p>
+
+<p class="label">PHONE</p>
 <p>07799 348471 — 24/7 for quotes </p>
 
 
@@ -261,10 +289,11 @@
  </div>         
 
  <div class="footerItems2">
-<p>SERVICE AREA:</p>
+  
+<p class="label">SERVICE AREA</p>
 <p>London & surrounding areas</p>
 
-<p>BUSINESS HOURS</p>
+<p class="label">BUSINESS HOURS</p>
 <p>Available every day</p>
 </div>
 
