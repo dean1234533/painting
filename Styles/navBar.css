@@ -12,7 +12,7 @@ body{margin: 0;}
 
 .Active ul li a:hover{color: blue;}
 
-.Active{height: 400px;}
+.Active{height: 500px;}
 
 .Active ul {display: block;position: absolute;top: 40%;left: 50%;transform: translateX(-80% );text-align: center;font-weight: bolder;}
 
@@ -28,13 +28,13 @@ ul li a{margin-left: 30px;text-decoration: none;padding: 20px;color: white;}
 
 .line3 {display: inline-block;width: 20px;height: 3px;background-color: rgb(244, 238, 238);margin-bottom: 15px;transition: all 1.2s;}
 
+.btn-close{opacity: 0;}
 
+.Active .line1,
+.Active .line2,
+.Active .line3{opacity: 0;}
 
-.Active .line2{opacity: 0;transition: all 1.2s;}
-
-.Active .line1{transform: rotate(50deg);position: relative;top: 30%;transition: all 1.2s;width: 22px;display: iline-block;line-height: 2 !important  }
-.Active .line3{transform: rotate(-50deg);position: relative;top: -32%;transition: all 1.2s;width: 22px;display: inline-block;line-height: 1 !important;  }
-
+.Active .btn-close{opacity: 1;position: relative;top: -40px;background-color: white;}
 
 .navBar ul li a{
   opacity: 0;
