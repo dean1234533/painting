@@ -5,6 +5,11 @@
 
 .contentContainer{background: linear-gradient(288deg, #d1d5e6 0%, #6d8375 100%, #313a3a 100%, #6f3515 100%, #1a1e1b 100%);}
 
+.FiveStar,
+.fullyInsured,
+.freeEstimates{padding: 5px;}
+
+
 .videoContainer{position: relative;
     
     width: 100%;
@@ -12,6 +17,10 @@
     height: calc(5% - 18px); 
     display: block;
 } 
+
+.hero-items{margin: 10px;}
+
+.hero-items p{font-size:clamp(12px,2.5vw,18px);}
 
 .headerSection{margin-bottom: -24px;}
 
@@ -40,13 +49,13 @@ text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c; margin-top:40%;width: 90%;tex
 
 .contentContainer {margin-top: 20px;display: block;}
 
-.reviewsSection .carousel-item{background-color: rgba(240, 248, 255, 0.931);border: 3px solid rgba(5, 4, 4, 0.741);border-radius: 20px;margin-top: 20%;padding: 20px; 
+.reviewsSection .carousel-item{background-color: rgba(240, 248, 255, 0.931);border: 3px solid rgba(5, 4, 4, 0.741);border-radius: 20px;margin-top: 20%;padding: 20px;pointer-events: panX; 
 }
 
 
 .label{color: rgba(170, 163, 163, 0.92);margin-bottom: -20px;}
 
-.reviewsSection{background-color: rgba(10, 14, 14, 0.272);border-radius: 20px;width: 90%;margin: 0 auto;position: relative;height:700px;padding: 20px;; }
+.reviewsSection{background-color: rgba(10, 14, 14, 0.272);border-radius: 20px;width: 90%;margin: 0 auto;position: relative;height:700px;padding: 20px; }
 
 .reviews{padding-top: 40px;}
 
@@ -148,7 +157,7 @@ h2{text-align: center;}
 
 .cardContainer{display: flex;align-items: center;flex-direction: column;margin: 20px;}
 
-.OurWorkSection .carousel-inner{max-height: 600px;max-width: 750px;margin: 0 auto;}
+.OurWorkSection .carousel-inner{max-height: 600px;max-width: 750px;margin: 0 auto;pointer-events: panX;}
   
   .OurWorkSection .carousel-item img{
    max-height:  800px;

@@ -29,10 +29,11 @@ ul li a{margin-left: 30px;text-decoration: none;padding: 20px;color: white;}
 .line3 {display: inline-block;width: 20px;height: 3px;background-color: rgb(244, 238, 238);margin-bottom: 15px;transition: all 1.2s;}
 
 
+
 .Active .line2{opacity: 0;transition: all 1.2s;}
 
-.Active .line1{transform: rotate(40deg);position: relative;top: 30%;transition: all 1.2s;width: 22px !important }
-.Active .line3{transform: rotate(-40deg);position: relative;top: -32%; transition: all 1.2s;width: 22px !important }
+.Active .line1{transform: rotate(40deg);position: relative;top: 30%;transition: all 1.2s;width: 22px;display: iline-block;line-height: 1;  }
+.Active .line3{transform: rotate(-40deg);position: relative;top: -34%;transition: all 1.2s;width: 22px;display: inline-block;line-height: 1;  }
 
 
 
