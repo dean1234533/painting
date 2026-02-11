@@ -47,7 +47,7 @@ text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c; margin-top:40%;width: 90%;tex
 
 .carousel-item .stars{font-size: 22px;}
 
-.contentContainer {margin-top: 20px;display: block;}
+.contentContainer {margin-top: 20px;}
 
 .reviewsSection .carousel-item{background-color: rgba(240, 248, 255, 0.931);border: 3px solid rgba(5, 4, 4, 0.741);border-radius: 20px;margin-top: 20%;padding: 20px;pointer-events: panX; 
 }

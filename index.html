@@ -314,18 +314,31 @@
 </script>
  
 <script>
-  // Force video to play
-  document.addEventListener('DOMContentLoaded', function() {
-    const video = document.getElementById('paintVideo');
-    
-    video.play().catch(error => {
-      console.log('Autoplay blocked:', error);
-      // Retry on first user interaction
-      document.addEventListener('click', function() {
-        video.play();
-      }, { once: true });
+// Aggressive autoplay script
+const video = document.getElementById('bgVideo');
+
+// Try multiple times
+function attemptPlay() {
+  video.muted = true; // Ensure muted
+  const playPromise = video.play();
+  
+  if (playPromise !== undefined) {
+    playPromise.catch(err => {
+      console.log('Play failed, retrying...', err);
+      // Retry after a short delay
+      setTimeout(attemptPlay, 100);
     });
-  });
+  }
+}
+
+// Try immediately
+attemptPlay();
+
+// Try when video is ready
+video.addEventListener('canplay', attemptPlay);
+
+// Try on page interaction
+document.addEventListener('click', attemptPlay, { once: true });
 </script>
 
   </body>
