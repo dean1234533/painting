@@ -7,6 +7,9 @@ body {
   margin: 0;
 }
 
+
+
+
 nav .phone{margin: 0 auto;margin-top: 20px;text-decoration: none;cursor: pointer;color: black;font-weight: bold;}
 
 nav .phone:hover {

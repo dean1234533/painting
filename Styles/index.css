@@ -6,7 +6,7 @@ body{background-color: rgba(47, 92, 143, 0.303);}
 
 
 
-.OurWorkSection h3{padding-top: 30px;font-weight: bold;text-decoration: underline;}
+.OurWorkSection h3{padding-top: 30px;font-weight: bold;text-align: center;text-decoration: underline;}
 
 .OurWorkSection .after,
 .OurWorkSection .before{margin-top: 50px;}
