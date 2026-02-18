@@ -1,7 +1,7 @@
 *{box-sizing: border-box;}
 
 
-body{background-color: rgba(47, 92, 143, 0.303);}
+body{background-color: rgba(47, 92, 143, 0.303);overflow-x: hidden;}
 
 
 
