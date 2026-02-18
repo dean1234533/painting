@@ -82,7 +82,7 @@ body{background-color: rgba(47, 92, 143, 0.303);overflow-x: hidden;}
 .whatIOfferSection{width: 100%;background-color:white;display: flex;justify-content: center;padding-top: 10px;flex-direction: column;align-items: center;padding-bottom: 20px;}
 
 
-.whatIOfferContainer h3{text-align: center;font-weight: bolder;z-index: 100;position: relative;color: black;font-size: 32px;padding-top: 30px;}
+.whatIOfferContainer h3{text-align: center;font-weight: bolder;position: relative;color: black;font-size: 32px;padding-top: 30px;}
 
 
 .whatIOfferSection ul{padding: 20px;list-style: none;}
