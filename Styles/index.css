@@ -64,7 +64,7 @@ body{background-color: rgba(47, 92, 143, 0.303);}
 
 
 
-.reviewsSection .carousel-item{background-color: rgba(236, 240, 243, 0.931);border-radius: 50px;pointer-events: panX;max-width: 400px ;padding: 20px;
+.reviewsSection .carousel-item{background-color: rgba(236, 240, 243, 0.931);border-radius: 50px;pointer-events: panX;max-width: 400px ;padding: 20px;height: 380px;
 }
 .reviewsSection{ background-color: rgb(255, 255, 255);width: 100%;padding-bottom: 30px;display: flex;align-items: center;justify-content: center;flex-direction: column;}
 
@@ -74,9 +74,12 @@ body{background-color: rgba(47, 92, 143, 0.303);}
 
 .carousel-item .stars{font-size: 22px;}
 
+
+
+
 .carousel-control-next,
-.carousel-control-prev{height: 100%;opacity: 0;}
-.carousel{margin: 10px;}
+.carousel-control-prev{height: 100%;;border-radius: 50%;}
+.carousel{margin: 10px;;}
 
 .whiteLine{background-color: white;padding: 10px;}
 
