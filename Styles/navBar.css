@@ -7,6 +7,13 @@ body {
   margin: 0;
 }
 
+nav img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  display: inline;
+  object-fit: cover;
+}
 
 
 
@@ -42,11 +49,16 @@ nav .phone:hover {
   margin: 0;
   padding: 0;
   list-style: none;
+ 
 }
 
-/* Mobile Menu - Active State */
+.Active img{
+  display: none;
+}
+
 .Active {
   height: 500px;
+  
 }
 
 .Active ul {
@@ -58,6 +70,7 @@ nav .phone:hover {
   text-align: center;
   font-weight: bolder;
   list-style: none;
+ 
 }
 
 .Active ul li {
@@ -65,6 +78,7 @@ nav .phone:hover {
   font-size: larger;
   margin-top: -40px;
   line-height: 50px;
+ 
 }
 
 .Active ul li a:hover {
@@ -77,6 +91,7 @@ nav .phone:hover {
   padding: 20px;
   color: black;
   display: block;
+ 
 }
 
 /* Mobile - Hidden state for animation */
@@ -196,7 +211,7 @@ nav .phone:hover {
     padding: 0;
     align-items: center;
     height: 100%;
-    margin-left: 20px;
+    margin-left: 35%;
   }
 
   .navBar ul li {
@@ -211,6 +226,8 @@ nav .phone:hover {
     color:black;
     text-decoration: none;
     animation: none !important;
+    
+
   }
 
   .navBar ul li a:hover {
