@@ -13,6 +13,10 @@ nav img {
   height: auto;
   display: inline;
   object-fit: cover;
+  
+ 
+
+ 
 }
 
 
@@ -46,14 +50,23 @@ nav .phone:hover {
 /* Hide menu by default on mobile */
 .navBar ul {
   display: none;
-  margin: 0;
-  padding: 0;
+
   list-style: none;
  
 }
 
+.logoContainer{
+  position: absolute;
+  top: -110px;
+}
+
 .Active img{
-  display: none;
+
+
+
+position: absolute;
+top: 0;
+left: 0px;
 }
 
 .Active {
@@ -70,12 +83,10 @@ nav .phone:hover {
   text-align: center;
   font-weight: bolder;
   list-style: none;
- 
 }
 
 .Active ul li {
   font-weight: bolder;
-  font-size: larger;
   margin-top: -40px;
   line-height: 50px;
  
@@ -91,7 +102,8 @@ nav .phone:hover {
   padding: 20px;
   color: black;
   display: block;
- 
+ font-size: 28px !important;
+
 }
 
 /* Mobile - Hidden state for animation */
@@ -211,7 +223,7 @@ nav .phone:hover {
     padding: 0;
     align-items: center;
     height: 100%;
-    margin-left: 35%;
+    margin-left: 32%;
   }
 
   .navBar ul li {
@@ -256,8 +268,12 @@ nav .phone:hover {
     line-height: normal;
   }
 
-  /* Optional: Add space-between for better desktop layout */
+  
   .navBar {
     justify-content: flex-start;
+  }
+
+  .Active ul li a {
+    font-size: (14px, 1.4vw, 17px)
   }
 }

@@ -16,6 +16,7 @@ h1 {
     color: white;
     margin-top: 60;
     text-align: center;
+    margin: 20px;
 }
 
 h2 {
@@ -53,11 +54,15 @@ ul {
     font-weight: 400;
     font-style: normal;
     line-height: 1.6;
+    
 }
 
 p {
     margin-top: 20px;
     margin-bottom: 20px;
+    margin: 20px;
+   
+
 }
 
 hr {
@@ -139,6 +144,7 @@ hr {
 .hero-content p {
     color: white;
     text-align: center;
+    margin: 40px;
 }
 
 .hero-text {
@@ -155,6 +161,9 @@ hr {
     margin: 10px;
     margin-left: -10px;
 }
+
+
+
 
 .whatIOfferSection {
     width: 100%;
