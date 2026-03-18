@@ -1,5 +1,5 @@
 
-.pageContainer{width: 90%;max-width: 600px ;border-radius: 20px;background-color:whitesmoke;border: 3px solid rgba(0, 0, 0, 0.225);display: flex;justify-self: center;margin-top: 20px;}
+.pageContainer{width: 90%;max-width: 600px ;border-radius: 20px;background-color:whitesmoke;border: 3px solid rgba(0, 0, 0, 0.225);display: flex;justify-self: center !important;margin-top: 20px;}
 
 
 
@@ -43,7 +43,7 @@ textarea,
 input{margin-bottom: 20px;max-width: 600px ;height: 40px;border-radius: 8px;border: 2px solid rgba(0, 0, 0, 0.506);padding-left: 10px;display: flex;justify-self: center;width: 90%;}
 
 
-
+select{color: rgba(0, 0, 0, 0.443);}
 
 
 textarea{height: 80px;padding-top: 10px;}
