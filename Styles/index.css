@@ -75,8 +75,7 @@ hr {
 
 .buttonContainer {
     display: flex !important;
-    justify-self: center !important;
-   
+   justify-content: center;
     margin-bottom: 35px;
 }
 

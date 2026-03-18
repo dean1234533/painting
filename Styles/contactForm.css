@@ -56,6 +56,14 @@ textarea{height: 80px;padding-top: 10px;}
 
 .formBtn:hover{background-color: rgb(11, 55, 217);}
 
+@media (max-width: 480px){.contactUs{
+   
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;}
+
+  .formContainer{border-radius: 0;width: 100%;}
+}
+
 @media (min-width: 768px) {.pageContainer{margin-bottom: 20px;}
 .grid{display: grid;grid-template-columns: 1fr 1fr;margin: 0 auto;
 }
