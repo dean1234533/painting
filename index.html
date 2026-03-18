@@ -6,362 +6,330 @@
     <title>Painting & Decorating</title>
 
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<meta name="format-detection" content="telephone=no">
+     <script src="./config.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function() {
+        emailjs.init({
+          publicKey: CONFIG.emailjsKey
+        });
+      })();
+    </script>
+    <script type="text/javascript">
+      window.onload = function() {
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+          event.preventDefault();
+          emailjs.sendForm('service_etlt9si', 'template_j4jlscv', this)
+            .then(() => {
+              document.getElementById('contact-form').reset();
+              alert('SUCCESS!');
+            }, (error) => {
+              alert('FAILED' + JSON.stringify(error));
+            });
+        });
+      }
+    </script>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Bitcount+Grid+Single:wght@100..900&family=Gravitas+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Limelight&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="./Styles/index.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Bitcount+Grid+Single:wght@100..900&family=Gravitas+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Limelight&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./Styles/index.css">
     <link rel="stylesheet" href="./Styles/navBar.css">
+    <link rel="stylesheet" href="./Styles/contactForm.css">
+    <link rel="stylesheet" href="./Styles/slider.css">
   </head>
   <body>
-<div class="navContainer">
 
-<nav class="navBar">
-
-  <div class="logoContainer">
-<img src="./Images/ChatGPT Image Feb 18, 2026, 11_09_36 PM.png">
-</div>
-
-    <ul>
-<li><a href="#home">Home</a></li>
-<li><a href="#Portfolio">Portfolio</a></li>
-<li><a href="#reviews">Reviews</a></li>
-<li><a href="#services">Services</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-
-<button class="Navbtn">
-
-<span class="line1"></span>
-<span class="line2"></span>
-<span class="line3"></span>
-
-</button>
-
-
-</nav>
-
-
- </div>
-   <a class="callBackStickyButton" href="https://wa.me/447752300937"><svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
-  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
-</svg></a>
-
-        
-
-   <div id="home"></div>
-
-   
-<section class="headerSection">
-
-
-
-
-
-<div class="heroImageContainer">
-    <picture>
-        <source srcset="./Images/IMG_8454.jpg"  media="(min-width: 768px)" >
-        <img id="heroImage" src="./Images/photo-output 13.PNG" alt="Description" width="100%">
-    </picture>
-</div>
-
-
-
-<div class="hero-content">
-<h1>South London's Trusted Home Painting Experts</h1>
-
-<div class="hero-text">
-<p>Professional house painting across London — fully insured, with results guaranteed.</p>
-</div>
-
-<div class="buttonContainer">
-<button type="button" class="btn btn-primary">Get Your Free Quote</button>
-</div>
-
-<p><span class="FiveStar">⭐️⭐️⭐️⭐️⭐️</span> Rated, 
-5 stars by 30+ London homeowners</p>
-
-</div>
-
-
-</section>
-
-<div class="whiteLine">
-
-</div>
-
-
- <div id="services"></div>
-<div class="whatIOfferContainer">
-  
-
-
-<div class="whatIOffer">
-<h2>What I Offer </h2>
-
-<p class="text">Quality workmanship at fair prices. I keep your home tidy during the job and help you choose the perfect colors if you're unsure. Every project includes proper preparation and a clean, lasting finish.
-</p>
-</div>
-<section class="whatIOfferSection">
-
-
-  
-<ul>
-  
-</svg>
-<li><img src="./Images/—Pngtree—green check mark icon design_6219078.png"> room repaints</li>
-
-<li><img src="./Images/—Pngtree—green check mark icon design_6219078.png">Kitchen cabinet refreshes</li>
-
-<li><img src="./Images/—Pngtree—green check mark icon design_6219078.png">Stairs (including repairs)</li>
-
-<li><img src="./Images/—Pngtree—green check mark icon design_6219078.png">Ceilings only</li>
-
-<li><img src="./Images/—Pngtree—green check mark icon design_6219078.png">Feature walls</li>
-
-<li><img src="./Images/—Pngtree—green check mark icon design_6219078.png">Woodwork & trim</li>
-
-<li><img src="./Images/—Pngtree—green check mark icon design_6219078.png">Color consultation included</li>
-</ul>
-
-
-<div class="ButtonContainer">
-<button type="button" class="btn btn-primary">Get Your Free Quote</button>
-</div>
-
-
-</section>
-</div>
-
-
-
-
-
- 
- <div id="Portfolio"></div>
-<section class="OurWorkSection">
-
- 
-<h2>Recent Work</h2>
-  </div>
-
-
-
-</div>
-
-
-
-
-
-
-<div class="ourWorkContainer">
-<div class="before">
-  <h4>Before</h4>
-<img src="./Images/IMG_8447.jpg">
-  
-
-</div>
-
-<div class="after">
-  <h4>After</h4>
-<img src="./Images/IMG_8449.jpg">
-  
-
-</div>
-</div>
-<hr>
-
-
-
-
-<div class="ourWorkContainer">
-<div class="before">
-  <h4>Before</h4>
-<img src="./Images/IMG_8450.jpg">
-  
-
-</div>
-
-<div class="after">
-  <h4>After</h4>
-<img src="./Images/IMG_8451.jpg">
-  
-
-</div>
-</div>
-<hr>
-
-
-
-
-<div class="ourWorkContainer">
-<div class="before">
-  <h4>Before</h4>
-<img src="./Images/IMG_8452.jpg">
-  
-
-</div>
-
-<div class="after">
-  <h4>After</h4>
-<img src="./Images/IMG_8453.jpg">
-  
-
-</div>
-</div>
-<hr>
-
-
-</section>
-
-
-<section class="reviewsSection">
-
-
-   <div id="reviews"></div>
-  <div  data-aos="fade-up-right">
-<h2 class="reviews">What Our Customers Say</h2>
-</div>
-
-<div  data-aos="fade-up-right">
-<div id="carouselExampleIndicators" class="carousel slide">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <p>
-        <span class="stars">⭐️⭐️⭐️⭐️⭐️</span>
-        
-        <br><br>Excellent Painting Service. I'm very happy with the painting work. Professional, reliable, and great attention to detail. The finish looks fantastic and the job was completed on time and tidy throughout. Highly recommended. 
-       
-       <br><br>
-       <span class="reviewName">- David R.</span>
-       
-      </p>
+    <!-- NAV -->
+    <div class="navContainer">
+      <nav class="navBar">
+        <div class="logoContainer">
+          <img src="./Images/ChatGPT Image Feb 18, 2026, 11_09_36 PM.png">
+        </div>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#Portfolio">Portfolio</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="Navbtn">
+          <span class="line1"></span>
+          <span class="line2"></span>
+          <span class="line3"></span>
+        </button>
+      </nav>
     </div>
-   
-    <div class="carousel-item">
-      <p>
-        <span class="stars">⭐️⭐️⭐️⭐️⭐️</span>
-       
-        <br><br>Great quality painting, very professional and easy to deal with. Highly recommend.
-       <br><br>
-       - Sarah M.
-      </p>
-    </div>
+
     
-    <div class="carousel-item">
-      <p>
-        <span class="stars">⭐️⭐️⭐️⭐️⭐️</span>
-        
-        <br><br>Fantastic service from start to finish. Very skilled, trustworthy, and careful with my home. The results exceeded expectations — would definitely recommend.
-      
-      <br><br>
-        James T.
-       
-      </p>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
+    <a class="callBackStickyButton" href="https://wa.me/447752300937">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+        <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+      </svg>
+    </a>
 
-</div>
-
- </div>
-
-
-</section>
-
-
-
-
-
-
-<div class="readyToElevateYourHomeContainer">
- <div id="contact"></div>
-<div data-aos="fade-up-right">
-
-
-<h2>Ready to Elevate Your Home?</h2>
-</div>
-
-<div data-aos="fade-up-right">
-
-  <div class="buttonContainer3">
-<button type="button" class="btn btn-primary">Get Your Free Quote</button>
-</div>
-</div>
-
-
-<div data-aos="fade-up-right">
-<p>Request a complimentary quote and bring your vision to life.</p>
-</div>
-</div>
-</div>
-
-<footer>
-
-<div class="footerItems1">
-<h3>Get in Touch</h3>
-
-
-<p class="label">PHONE</p>
-<p>07799 348471 — 24/7 for quotes </p>
-
-
-
-<a href="mailto:DBWebDev@proton.me" target="_blank">
-                <img src="./Images/mail.png" style="color: white"alt="email logo" width="30">
-                Email
-              </a>
-        
-        
-       <a href="https://www.instagram.com/DBWebDev" target="_blank">
-          
-            <img src="./Images/instagram 2.png" style="color: white"alt="instagram logo" width="30">
-            Instagram
-          </a>
- </div>         
-
- <div class="footerItems2">
   
-<p class="label">SERVICE AREA</p>
-<p>London & surrounding areas</p>
+    <div id="home"></div>
+    <section class="headerSection">
+      <div class="heroImageContainer">
+        <picture>
+          <source srcset="./Images/IMG_8454.jpg" media="(min-width: 1024px)">
+          <img id="heroImage" src="./Images/photo-output 11.PNG" alt="Description" width="100%">
+        </picture>
+      </div>
+      <div class="hero-content">
+        <h1>South London's Trusted Home Painting Experts</h1>
+        <div class="hero-text">
+         <p>Expert house painters in London. Fully insured. Results guaranteed.</p>
+        </div>
+        <div class="buttonContainer">
+          <a href="#contact" type="button" class="btn btn-primary">Get Your Free Quote</a>
+        </div>
+        <p><span class="FiveStar">⭐️⭐️⭐️⭐️⭐️</span> Rated, 5 stars by 30+ London homeowners</p>
+      </div>
+    </section>
 
-<p class="label">BUSINESS HOURS</p>
-<p>Available every day</p>
+    <div class="whiteLine"></div>
+
+    <!-- SERVICES -->
+    <div id="services"></div>
+    <div class="whatIOfferContainer">
+      <div class="whatIOffer">
+        <h2>What I Offer</h2>
+        <p class="text">Quality workmanship at fair prices. I keep your home tidy during the job and help you choose the perfect colors if you're unsure. Every project includes proper preparation and a clean, lasting finish.</p>
+      </div>
+      <section class="whatIOfferSection">
+
+        <div class="whatIOfferCard">
+        <ul>
+          <li><img src="./Images/—Pngtree—green check mark icon design_6219078.png"> Room repaints</li>
+          <li><img src="./Images/—Pngtree—green check mark icon design_6219078.png"> Kitchen cabinet refreshes</li>
+          <li><img src="./Images/—Pngtree—green check mark icon design_6219078.png"> Stairs (including repairs)</li>
+          <li><img src="./Images/—Pngtree—green check mark icon design_6219078.png"> Ceilings only</li>
+          <li><img src="./Images/—Pngtree—green check mark icon design_6219078.png"> Feature walls</li>
+          <li><img src="./Images/—Pngtree—green check mark icon design_6219078.png"> Woodwork & trim</li>
+          <li><img src="./Images/—Pngtree—green check mark icon design_6219078.png"> Color consultation included</li>
+        </ul>
+        <div class="ButtonContainer">
+          <a href="#contact" type="button" class="btn btn-primary">Get Your Free Quote</a>
+        </div>
 </div>
 
+      </section>
+    </div>
 
-              
+ 
+    <div id="Portfolio"></div>
+    <section class="OurWorkSection">
+      <h2>Recent Work</h2>
 
-</footer>
-</div>
+      
+      <div class="ourWorkContainer">
+        <div id="slider-wrap1" class="slider-wrap">
+          <div id="img-b1" class="img-b">
+            <img src="./Images/IMG_8449.jpg" alt="After" />
+            <div class="sliderLabel label-after">After</div>
+          </div>
+          <div id="img-a1" class="img-a">
+            <img id="img-a-inner1" src="./Images/IMG_8447.jpg" alt="Before" />
+            <div class="sliderLabel label-before">Before</div>
+          </div>
+          <div id="divider1" class="divider">
+            <div id="handle1" class="handle">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 10H14M6 10L8.5 7M6 10L8.5 13M14 10L11.5 7M14 10L11.5 13" stroke="#444" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+     
+
+     
+      
+        <div id="slider-wrap2" class="slider-wrap">
+          <div id="img-b2" class="img-b">
+            <img src="./Images/IMG_8451.jpg" alt="After" />
+            <div class="sliderLabel label-after">After</div>
+          </div>
+          <div id="img-a2" class="img-a">
+            <img id="img-a-inner2" src="./Images/IMG_8450.jpg" alt="Before" />
+            <div class="sliderLabel label-before">Before</div>
+          </div>
+          <div id="divider2" class="divider">
+            <div id="handle2" class="handle">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 10H14M6 10L8.5 7M6 10L8.5 13M14 10L11.5 7M14 10L11.5 13" stroke="#444" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+     
+
+     
+      
+        <div id="slider-wrap3" class="slider-wrap">
+          <div id="img-b3" class="img-b">
+            <img src="./Images/IMG_8453.jpg" alt="After" />
+            <div class="sliderLabel label-after">After</div>
+          </div>
+          <div id="img-a3" class="img-a">
+            <img id="img-a-inner3" src="./Images/IMG_8452.jpg" alt="Before" />
+            <div class="sliderLabel label-before">Before</div>
+          </div>
+          <div id="divider3" class="divider">
+            <div id="handle3" class="handle">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 10H14M6 10L8.5 7M6 10L8.5 13M14 10L11.5 7M14 10L11.5 13" stroke="#444" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    
+    <section class="reviewsSection">
+      <div id="reviews"></div>
+      <div data-aos="fade-up-right">
+        <h2 class="reviews">What Our Customers Say</h2>
+      </div>
+      <div data-aos="fade-up-right">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <p>
+                <span class="stars">⭐️⭐️⭐️⭐️⭐️</span>
+                <br><br>Excellent Painting Service. I'm very happy with the painting work. Professional, reliable, and great attention to detail. The finish looks fantastic and the job was completed on time and tidy throughout. Highly recommended.
+                <br><br><span class="reviewName">- David R.</span>
+              </p>
+            </div>
+            <div class="carousel-item">
+              <p>
+                <span class="stars">⭐️⭐️⭐️⭐️⭐️</span>
+                <br><br>Great quality painting, very professional and easy to deal with. Highly recommend.
+                <br><br>- Sarah M.
+              </p>
+            </div>
+            <div class="carousel-item">
+              <p>
+                <span class="stars">⭐️⭐️⭐️⭐️⭐️</span>
+                <br><br>Fantastic service from start to finish. Very skilled, trustworthy, and careful with my home. The results exceeded expectations — would definitely recommend.
+                <br><br>- James T.
+              </p>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+   
+    <div class="pageContainer">
+      <div id="contact"></div>
+      <form id="contact-form">
+        <h1 class="contactUs"><span class="blueLetter">C</span>ontact Us</h1>
+        <input id="currentTime" type="hidden" name="time">
+        <input id="currentDate" type="hidden" name="date">
+        <h2 class="subHeading"><span class="blueLetter">P</span>ersonal <span class="lightBlueLetter">I</span>nfo</h2>
+        <div class="grid">
+          <input type="text" name="fName" placeholder="First Name" required>
+          <input type="text" name="lName" placeholder="Last Name" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="number" name="phone" placeholder="Phone Number" required>
+        </div>
+        <input class="longBox" type="text" name="postcode" placeholder="Postcode" required>
+        <h2 class="subHeading"><span class="blueLetter">J</span>ob <span class="lightBlueLetter">D</span>etails</h2>
+        <div class="grid">
+          <select name="typeOfWork" required>
+            <option value="">Select type of work</option>
+            <option value="interior">Interior Painting</option>
+            <option value="exterior">Exterior Painting</option>
+            <option value="Both">Both</option>
+          </select>
+          <select name="propertyType" required>
+            <option value="">Select property type</option>
+            <option value="House">House</option>
+            <option value="Flat">Flat</option>
+            <option value="Office">Office</option>
+            <option value="Commercial">Commercial</option>
+          </select>
+          <select name="areasToBePainted" required>
+            <option value="">Select areas to be painted</option>
+            <option value="Walls">Walls</option>
+            <option value="Ceilings">Ceilings</option>
+            <option value="Doors">Doors</option>
+            <option value="Skirting boards">Skirting boards</option>
+            <option value="Exterior">Exterior</option>
+          </select>
+          <input type="text" name="startDate" placeholder="Preferred start date (e.g. 13/08/2026)" required>
+        </div>
+        <textarea class="longBox" name="details" placeholder="Extra Details" required></textarea>
+        <input class="formBtn" type="submit" value="Request Quote">
+      </form>
+    </div>
+
+ 
+    <footer>
+      <div class="footerItems1">
+        <h3>Get in Touch</h3>
+        <p class="label">PHONE</p>
+        <p>07799 348471 — 24/7 for quotes</p>
+        <a href="mailto:DBWebDev@proton.me" target="_blank">
+          <img src="./Images/mail.png" alt="email logo" width="30"> Email
+        </a>
+        <a href="https://www.instagram.com/DBWebDev" target="_blank">
+          <img src="./Images/instagram 2.png" alt="instagram logo" width="30"> Instagram
+        </a>
+      </div>
+      <div class="footerItems2">
+        <p class="label">SERVICE AREA</p>
+        <p>London & surrounding areas</p>
+        <p class="label">BUSINESS HOURS</p>
+        <p>Available every day</p>
+      </div>
+
+
+
+      <div class="footer-bottom">
+<hr>
+
+            <p> © 2025 · Dean Burt
+                <a href="./Privacy-Policy" target="_blank" rel="noopener">Privacy Policy</a>
+                <a href="./Terms-and-conditions" target="_blank" rel="noopener">Terms &amp; Conditions</a>
+            </p>
+        </div>
+    </footer>
 
   
     <script src="./Script/navBar.js"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
- 
- <script>
-  AOS.init();
-</script>
- 
+    <script src="./Script/slider.js"></script>
+    <script>
+      var date = new Date();
+      document.getElementById('currentDate').value = date.toISOString().slice(0, 10);
+      document.getElementById('currentTime').value = date.getHours() + ':' + date.getMinutes();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 
   </body>
 </html>

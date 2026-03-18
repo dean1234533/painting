@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    color: black;
+    background-color: rgba(193, 184, 184, 0.334);
+    font-family: "IBM Plex Serif", serif;
+    font-size: clamp(16px, 4vw, 18px);
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    overflow-y: hidden;
+    font-size: clamp(40px, 5vw, 48px);
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color:rgb(23, 127, 202);
+}
+
+h2 {
+    overflow-y: hidden;
+    font-size: clamp(30px, 5vw, 34px);
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color:rgb(23, 127, 202);
+}
+
+h3 {
+    font-size: clamp(22px, 5vw, 26px);
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow-y: hidden;
+}
+
+ol {
+    font-size: clamp(15px, 5vw, 17px);
+}
+
+hr {
+    width: 100%;
+   
+}
+
+.content-container {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+    padding-top: 120px;
+}
+
+.List-Container li {
+    margin-bottom: 30px;
+    line-height: 1.5rem;
+}
+
+.List ol {
+    max-width: 650px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.redText {
+    color: blue;
+}
+
+.whiteSpace {
+    padding: 2px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.611);
+    margin-top: 10px;
+}
+
+footer {
+    background-color: white;
+    color: black;
+    padding-bottom: 20px;
+}
+
+footer .label {
+    color: rgba(47, 92, 143, 0.595);
+    margin-bottom: -20px;
+}
+
+footer h3,
+footer p {
+    margin: 20px;
+    width: 95%;
+    text-align: left;
+    font-family: "Libre Baskerville", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+footer h3 {
+    padding-top: 20px;
+}
+
+footer a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+   
+    
+}
+
+footer img {
+    margin-left: 3px;
+}
+
+.footer-bottom {
+    max-width: 1100px;
+    margin: 20px auto 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: clamp(10px, 2vw, 13px);
+    color: black;
+    margin: 0;
+    width: auto;
+}
+
+.footer-bottom a {
+    display: inline;
+    color: black;
+    margin-left: 12px;
+    font-size: inherit;
+}
+
+.footer-bottom a:hover {
+    color:blue;
+}
+
+ .desktopOnly{display: none;} 
+
+@media (min-width: 768px) {
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 20px;
+       
+    }
+}
+@media (min-width: 1200px) {
+   
+}
+
+   

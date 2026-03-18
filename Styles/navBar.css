@@ -45,6 +45,7 @@ nav .phone:hover {
   z-index: 100;
   top: 0;
   left: 0;
+  border-bottom:2px solid rgba(102, 140, 216, 0.766);
 }
 
 /* Hide menu by default on mobile */
@@ -70,14 +71,14 @@ left: 0px;
 }
 
 .Active {
-  height: 500px;
+  height: 100vh;
   
 }
 
 .Active ul {
   display: block;
   position: absolute;
-  top: 40%;
+  top: 20%;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -87,8 +88,8 @@ left: 0px;
 
 .Active ul li {
   font-weight: bolder;
-  margin-top: -40px;
-  line-height: 50px;
+  
+  line-height: 60px;
  
 }
 
@@ -210,7 +211,7 @@ left: 0px;
   width: 20px;
 }
 
-/* Desktop Styles - 1200px and up */
+
 @media (min-width: 1200px) {
   
   /* Show navigation normally */

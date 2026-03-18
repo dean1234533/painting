@@ -6,24 +6,26 @@ html,
 body {
     background-color: rgba(47, 92, 143, 0.303);
     overflow-x: hidden;
+    font-family: "Limelight", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:clamp(16px, 1.5vw, 20px)
+    
+   
 }
 
 h1 {
-    font-size: clamp(1.3rem, 5vw, 3rem);
-    font-family: "Limelight", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-size: clamp(1.6rem, 6vw, 3.5rem);
+   width: 100%;
     color: white;
-    margin-top: 60;
     text-align: center;
-    margin: 20px;
+    margin: 40px auto;
+   padding-top: 70px;
+   
 }
 
 h2 {
-    font-size: clamp(20px, 4vw, 36px);
-    font-family: "Limelight", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-size: clamp(20px, 3.5vw, 36px);
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -31,17 +33,12 @@ h2 {
 
 h3 {
     font-size: clamp(20px, 3.5vw, 30px);
-    font-family: "Limelight", sans-serif;
-    font-weight: 400;
-    font-style: normal;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
 h4 {
-    font-family: "Limelight", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+   
     margin: 20px;
     color: white;
 }
@@ -49,10 +46,7 @@ h4 {
 p,
 ol,
 ul {
-    font-size: clamp(15px, 2.5vw, 20px);
-    font-family: "Limelight", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+   
     line-height: 1.6;
     
 }
@@ -67,27 +61,33 @@ p {
 
 hr {
     width: 100%;
-    margin: 0 auto;
+   
 }
 
-.btn {
-    width: clamp(150px, 30vw, 250px);
+.btn{
+    width: clamp(190px, 30vw, 270px);
     height: clamp(50px, 10vw, 60px);
     border-radius: 50px;
     border: 2px solid white;
-    font-size: clamp(12px, 2.5vw, 22px);
+    font-size: clamp(15px,1.5vw,18px);
+   
 }
 
 .buttonContainer {
     display: flex;
-    justify-content: center;
+    justify-self: center;
     margin-bottom: 35px;
 }
 
-.buttonContainer3 {
+
+
+
+.buttonContainer a{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
+
 
 .callBackStickyButton {
     position: fixed;
@@ -103,6 +103,12 @@ hr {
     border: 2px solid black;
 }
 
+.callBackStickyButton:hover{
+background-color: rgba(31, 58, 189, 0.909);
+margin-bottom: 2px;
+
+}
+
 .callBackStickyButton svg {
     color: white;
     margin: 5px;
@@ -112,6 +118,7 @@ hr {
     position: relative;
     display: grid;
     overflow-y: hidden;
+   
 }
 
 .headerSection::after {
@@ -119,7 +126,7 @@ hr {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(14, 13, 13, 0.459);
+    background-color: rgba(14, 13, 13, 0.305);
     width: 100%;
     height: 100%;
 }
@@ -133,10 +140,11 @@ hr {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%,-50%);
     z-index: 2;
     width: 70%;
     overflow-y: hidden;
+ 
 }
 
 
@@ -144,14 +152,16 @@ hr {
 .hero-content p {
     color: white;
     text-align: center;
-    margin: 40px;
+    margin: 40px auto;
+    width: 80%;
+   
 }
 
 .hero-text {
     text-align: center;
     font-weight: bolder;
     color: white;
-   
+    
 }
 
 .hero-items {
@@ -159,7 +169,7 @@ hr {
     justify-content: center;
     width: 100%;
     margin: 10px;
-    margin-left: -10px;
+    
 }
 
 
@@ -174,7 +184,11 @@ hr {
     flex-direction: column;
     padding-top: 10px;
     padding-bottom: 20px;
+   
 }
+
+.whatIOfferCard{border: 2px solid rgba(47, 92, 143, 0.595);;border-radius: 10px;background-color: rgba(128, 128, 128, 0.105);}
+
 
 .whatIOfferContainer h2 {
     position: relative;
@@ -186,13 +200,15 @@ hr {
 
 .whatIOffer p {
     padding: 10px;
-    text-align: center;
+    margin: 10px auto;
     color: white;
+    width: 90%;
 }
 
 .whatIOfferSection ul {
     padding: 20px;
     list-style: none;
+   
 }
 
 .whatIOfferSection img {
@@ -200,42 +216,20 @@ hr {
     width: clamp(40px, 5vw, 60px);
 }
 
-.whatIOfferSection button {
+.whatIOfferCard .btn {
     border: 3px solid black;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-bottom: 20px;
 }
 
-.OurWorkSection h3 {
-    padding-top: 30px;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: underline;
-}
-
-.OurWorkSection h2 {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-weight: bolder;
-    color: white;
-}
-
-.OurWorkSection .after,
-.OurWorkSection .before {
-    margin-top: 50px;
-}
-
-.OurWorkSection img {
-    background-position: center;
-    background-size: cover;
-    object-fit: cover;
-    width: 100%;
-    height: 300px;
-}
-
-.OurWorkSection p {
-    margin: 20px;
-    text-align: center;
-}
+ .whatIOfferCard ul{ 
+    line-height: 40px;
+}  
 
 .reviewsSection {
     background-color: rgb(255, 255, 255);
@@ -278,23 +272,11 @@ hr {
     margin: 10px;
 }
 
-.readyToElevateYourHomeContainer {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    color: white;
-}
-
-.readyToElevateYourHomeContainer .btn {
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.readyToElevateYourHomeContainer p {
-    text-align: center;
-    font-family: "Libre Baskerville", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+.ourWorkContainer{
+    padding: 20px;
+display: grid;
+grid-template-columns: 1fr; 
+justify-items: center;
 }
 
 .whiteLine {
@@ -306,6 +288,10 @@ footer {
     background-color: white;
     color: black;
     padding-bottom: 20px;
+     font-family: "Libre Baskerville", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 footer .label {
@@ -318,10 +304,7 @@ footer p {
     margin: 20px;
     width: 95%;
     text-align: left;
-    font-family: "Libre Baskerville", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+   
 }
 
 footer h3 {
@@ -332,27 +315,56 @@ footer a {
     margin-left: 20px;
     text-decoration: none;
     color: black;
+   
 }
 
 footer img {
     margin-left: 3px;
 }
 
+.footer-bottom {
+    max-width: 1100px;
+   
+    
+}
 
+.footer-bottom p {
+    font-size: clamp(10px, 2vw, 13px);
+    color: black;
+    margin: 0;
+    width: auto;
+}
+
+.footer-bottom a {
+    display: inline;
+    color: black;
+    margin-left: 12px;
+    font-size: inherit;
+}
+
+.footer-bottom a:hover {
+    color:blue;
+}
 
 @media (min-width: 768px) {
     .hero-content {
         padding-bottom: 10%;
     }
 
+
+
+h1 {
+    
+   padding-top: 150px;
+   
+}
+
+
+
     .OurWorkSection {
         margin-bottom: -10px;
     }
 
-    .ourWorkContainer {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
 
     .carousel-control-next,
     .carousel-control-prev {
@@ -371,15 +383,33 @@ footer img {
         display: grid;
         grid-template-columns: 1fr 1fr;
         padding: 20px;
-        line-height: 10px !important;
+        
     }
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 1024px) {
+
+
+
+}
+
+
+@media (min-width: 1200px) {
     .hero-content {
         padding-bottom: 30%;
-        width: 100%;
+        width: 90%;
     }
+
+
+
+.ourWorkContainer{
+     width: 1300px;
+  
+   display: grid;grid-template-columns: 1fr 1fr 1fr;
+   gap:30px;
+   justify-self: center;
+  
+}
 
     .btn {
         margin-block: 20px;
