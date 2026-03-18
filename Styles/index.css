@@ -59,10 +59,7 @@ p {
 
 }
 
-hr {
-    width: 100%;
-   
-}
+
 
 .btn{
     width: clamp(190px, 30vw, 270px);
@@ -170,10 +167,12 @@ margin-bottom: 2px;
     justify-content: center;
     width: 100%;
     margin: 10px;
-    
+   
 }
 
-
+.hero-content .FiveStar {
+    letter-spacing: 5px;
+}
 
 
 .whatIOfferSection {
