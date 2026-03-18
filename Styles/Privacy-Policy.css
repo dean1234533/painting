@@ -65,21 +65,18 @@ hr {
     margin: 0 auto;
 }
 
-.redText {
-    color: blue;
-}
 
-.whiteSpace {
-    padding: 2px;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.611);
-    margin-top: 10px;
-}
+
 
 footer {
     background-color: white;
     color: black;
     padding-bottom: 20px;
+    text-align: left;
+    font-family: "Libre Baskerville", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 footer .label {
@@ -91,11 +88,7 @@ footer h3,
 footer p {
     margin: 20px;
     width: 95%;
-    text-align: left;
-    font-family: "Libre Baskerville", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+    
 }
 
 footer h3 {
@@ -106,8 +99,10 @@ footer a {
     margin-left: 20px;
     text-decoration: none;
     color: black;
-   
-    
+  display: flex;
+ margin-top: 10px;
+  gap: 5px;;
+    align-items: center;
 }
 
 footer img {
@@ -118,6 +113,9 @@ footer img {
     max-width: 1100px;
     margin: 20px auto 0;
     text-align: center;
+    border-top: 1px solid black;
+    width: 100%;
+    padding-top:10px ;
 }
 
 .footer-bottom p {
@@ -138,7 +136,6 @@ footer img {
     color:blue;
 }
 
- .desktopOnly{display: none;} 
 
 @media (min-width: 768px) {
     footer {
@@ -147,9 +144,6 @@ footer img {
         padding: 20px;
        
     }
-}
-@media (min-width: 1200px) {
-   
 }
 
    

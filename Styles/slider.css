@@ -84,4 +84,6 @@
   box-shadow: 0 2px 10px rgba(0,0,0,0.35);
 }
 
-@media (min-width: 1200px) {.slider-wrap {margin-left: 20px;}}
+@media (min-width: 1200px) {
+  .slider-wrap {margin-left: 20px;}
+}

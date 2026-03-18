@@ -16,3 +16,18 @@ btn.addEventListener("click", ()=>{
 dropDown()
 
 })
+
+const navDropDown = document.querySelector(".navBar")
+const list = document.querySelector(".ul")
+
+function listClick(){
+
+
+navDropDown.classList.remove("Active")
+
+
+
+
+}
+
+list.addEventListener("click",listClick)

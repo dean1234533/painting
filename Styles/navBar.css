@@ -1,4 +1,4 @@
-/* Reset */
+
 * {
   box-sizing: border-box;
 }
@@ -28,12 +28,12 @@ nav .phone:hover {
  
 }
 
-/* Navigation Container */
+
 .navContainer {
   width: 100%;
 }
 
-/* Navigation Bar - Base Styles */
+
 .navBar {
   display: flex;
   width: 100%;
@@ -48,7 +48,7 @@ nav .phone:hover {
   border-bottom:2px solid rgba(102, 140, 216, 0.766);
 }
 
-/* Hide menu by default on mobile */
+
 .navBar ul {
   display: none;
 
@@ -97,7 +97,7 @@ left: 0px;
   color: blue;
 }
 
-/* Navigation Links - Mobile */
+
 .navBar ul li a {
   text-decoration: none;
   padding: 20px;
@@ -107,7 +107,7 @@ left: 0px;
 
 }
 
-/* Mobile - Hidden state for animation */
+
 @media (max-width: 1199px) {
   .navBar ul li a {
     opacity: 0;
@@ -115,7 +115,7 @@ left: 0px;
   }
 }
 
-/* Mobile Menu Animations */
+
 .Active ul li:nth-child(1) a {
   animation: slideIn 0.5s forwards;
 }
@@ -143,14 +143,14 @@ left: 0px;
   }
 }
 
-/* Hamburger Button */
+
 .Navbtn {
   width: 30px;
   height: 30px;
   position: absolute;
   right: 20px;
-  top: 20px;  /* Changed from 50% to move to top */
-  transform: none;  /* Removed translateY */
+  top: 20px; 
+  transform: none;  
   background: none;
   border: none;
   cursor: pointer;
@@ -163,7 +163,7 @@ left: 0px;
 
 }
 
-/* Hamburger Lines */
+
 .line1 {
   display: block;
   width: 25px;
@@ -189,7 +189,7 @@ left: 0px;
   transition: all 0.3s;
 }
 
-/* Active State - Transform hamburger to X */
+
 .Active .line2 {
   opacity: 0;
   transition: all 1.2s;
@@ -198,7 +198,7 @@ left: 0px;
 .Active .line1 {
   transform: rotate(45deg);
   position: relative;
-  top: 8px;  /* Adjusted for better X alignment */
+  top: 8px;  
   transition: all 1.2s;
   width: 20px;
 }
@@ -206,7 +206,7 @@ left: 0px;
 .Active .line3 {
   transform: rotate(-45deg);
   position: relative;
-  top: -8px;  /* Adjusted for better X alignment */
+  top: -8px;  
   transition: all 1.2s;
   width: 20px;
 }
@@ -214,7 +214,7 @@ left: 0px;
 
 @media (min-width: 1200px) {
   
-  /* Show navigation normally */
+  
   .navBar ul {
     display: flex !important;
     flex-direction: row;
@@ -247,12 +247,12 @@ left: 0px;
     color: blue;
   }
 
-  /* Hide hamburger button on desktop */
+  
   .Navbtn {
     display: none;
   }
 
-  /* Prevent Active class from affecting desktop */
+  
   .Active {
     height: 70px;
   }
