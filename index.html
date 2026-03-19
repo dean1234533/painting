@@ -6,29 +6,7 @@
     <title>Painting & Decorating</title>
 
 
-     <script src="./config.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script type="text/javascript">
-      (function() {
-        emailjs.init({
-          publicKey: CONFIG.emailjsKey
-        });
-      })();
-    </script>
-    <script type="text/javascript">
-      window.onload = function() {
-        document.getElementById('contact-form').addEventListener('submit', function(event) {
-          event.preventDefault();
-          emailjs.sendForm('service_etlt9si', 'template_j4jlscv', this)
-            .then(() => {
-              document.getElementById('contact-form').reset();
-              alert('SUCCESS!');
-            }, (error) => {
-              alert('FAILED' + JSON.stringify(error));
-            });
-        });
-      }
-    </script>
+     
 
 
 
@@ -108,13 +86,13 @@
 
         <div class="whatIOfferCard">
         <ul>
-          <li><img src="./Images/icons8-paint-roller-100.png"> Room repaints</li>
-          <li><img src="./Images/icons8-paint-roller-100.png"> Kitchen cabinet refreshes</li>
-          <li><img src="./Images/icons8-paint-roller-100.png"> Stairs (including repairs)</li>
-          <li><img src="./Images/icons8-paint-roller-100.png"> Ceilings only</li>
-          <li><img src="./Images/icons8-paint-roller-100.png"> Feature walls</li>
-          <li><img src="./Images/icons8-paint-roller-100.png"> Woodwork & trim</li>
-          <li><img src="./Images/icons8-paint-roller-100.png"> Color consultation included</li>
+          <li><img src="./Images/icons8-paint-roller-100.png " loading="lazy"> Room repaints</li>
+          <li><img src="./Images/icons8-paint-roller-100.png" loading="lazy" > Kitchen cabinet refreshes</li>
+          <li><img src="./Images/icons8-paint-roller-100.png" loading="lazy"> Stairs (including repairs)</li>
+          <li><img src="./Images/icons8-paint-roller-100.png" loading="lazy"> Ceilings only</li>
+          <li><img src="./Images/icons8-paint-roller-100.png" loading="lazy"> Feature walls</li>
+          <li><img src="./Images/icons8-paint-roller-100.png" loading="lazy"> Woodwork & trim</li>
+          <li><img src="./Images/icons8-paint-roller-100.png" loading="lazy" > Color consultation included</li>
         </ul>
         <div class="ButtonContainer">
           <a href="#contact" type="button" class="btn btn-primary">Get Your Free Quote</a>
@@ -133,11 +111,11 @@
       <div class="ourWorkContainer">
         <div id="slider-wrap1" class="slider-wrap">
           <div id="img-b1" class="img-b">
-            <img src="./Images/IMG_8449.jpg" alt="After" />
+            <img src="./Images/IMG_8449.jpg" alt="After" loading="lazy"/>
             <div class="sliderLabel label-after">After</div>
           </div>
           <div id="img-a1" class="img-a">
-            <img id="img-a-inner1" src="./Images/IMG_8447.jpg" alt="Before" />
+            <img id="img-a-inner1" src="./Images/IMG_8447.jpg" alt="Before" loading="lazy" />
             <div class="sliderLabel label-before">Before</div>
           </div>
           <div id="divider1" class="divider">
@@ -154,11 +132,11 @@
       
         <div id="slider-wrap2" class="slider-wrap">
           <div id="img-b2" class="img-b">
-            <img src="./Images/IMG_8451.jpg" alt="After" />
+            <img src="./Images/IMG_8451.jpg" alt="After" loading="lazy" />
             <div class="sliderLabel label-after">After</div>
           </div>
           <div id="img-a2" class="img-a">
-            <img id="img-a-inner2" src="./Images/IMG_8450.jpg" alt="Before" />
+            <img id="img-a-inner2" src="./Images/IMG_8450.jpg" alt="Before" loading="lazy"/>
             <div class="sliderLabel label-before">Before</div>
           </div>
           <div id="divider2" class="divider">
@@ -175,11 +153,11 @@
       
         <div id="slider-wrap3" class="slider-wrap">
           <div id="img-b3" class="img-b">
-            <img src="./Images/IMG_8453.jpg" alt="After" />
+            <img src="./Images/IMG_8453.jpg" alt="After" loading="lazy"/>
             <div class="sliderLabel label-after">After</div>
           </div>
           <div id="img-a3" class="img-a">
-            <img id="img-a-inner3" src="./Images/IMG_8452.jpg" alt="Before" />
+            <img id="img-a-inner3" src="./Images/IMG_8452.jpg" alt="Before" loading="lazy"/>
             <div class="sliderLabel label-before">Before</div>
           </div>
           <div id="divider3" class="divider">
@@ -294,10 +272,10 @@
         <p class="label">PHONE</p>
         <p>07799 348471 — 24/7 for quotes</p>
         <a href="mailto:DBWebDev@proton.me" target="_blank">
-          <img src="./Images/mail.png" alt="email logo" width="30"> Email
+          <img src="./Images/mail.png" alt="email logo" width="30"loading="lazy"> Email
         </a>
         <a href="https://www.instagram.com/DBWebDev" target="_blank">
-          <img src="./Images/instagram 2.png" alt="instagram logo" width="30"> Instagram
+          <img src="./Images/instagram 2.png" alt="instagram logo" width="30"loading="lazy"> Instagram
         </a>
       </div>
       <div class="footerItems2">
@@ -320,8 +298,34 @@
     </footer>
 
   
-    <script src="./Script/navBar.js"></script>
-    <script src="./Script/slider.js"></script>
+    <script defer src="./Script/navBar.js"></script>
+    <script defer src="./Script/slider.js"></script>
+
+<script defer src="./config.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function() {
+        emailjs.init({
+          publicKey: CONFIG.emailjsKey
+        });
+      })();
+    </script>
+
+    <script type="text/javascript">
+      window.onload = function() {
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+          event.preventDefault();
+          emailjs.sendForm('service_etlt9si', 'template_j4jlscv', this)
+            .then(() => {
+              document.getElementById('contact-form').reset();
+              alert('SUCCESS!');
+            }, (error) => {
+              alert('FAILED' + JSON.stringify(error));
+            });
+        });
+      }
+    </script>
+
     <script>
       var date = new Date();
       document.getElementById('currentDate').value = date.toISOString().slice(0, 10);
