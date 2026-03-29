@@ -8,9 +8,9 @@ body {
 }
 
 nav img {
-  width: 100%;
+  width:100%;
   max-width: 200px;
-  height: auto;
+  height:auto;
   display: inline;
   object-fit: cover;
   
