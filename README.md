@@ -1,57 +1,75 @@
-South London Painting & Decorating Website
+# London painting and decorating website
 
-A clean, professional website built for a painter and decorator based in South London. The site features a before-and-after portfolio of real completed jobs, a rotating customer review carousel, and a prominent free quote CTA — making it effortless for homeowners to browse the work and get in touch.
+**A clean, professional website for a London painter and decorator. It has a before-and-after portfolio, a rotating review carousel, a working contact form, and a free-quote call to action throughout.**
 
-Live Site: https://dean1234533.github.io/painting
-Code: https://github.com/dean1234533/painting
+[![Live site](https://img.shields.io/badge/live-demo-0ea5e9?style=flat-square)](https://dean1234533.github.io/painting)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![EmailJS](https://img.shields.io/badge/EmailJS-FF6C37?style=flat-square)
+![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-222222?style=flat-square&logo=githubpages&logoColor=white)
 
-Overview
+**Live:** [dean1234533.github.io/painting](https://dean1234533.github.io/painting)
 
-Built for a local South London tradesperson who needed an online presence that would build trust with potential customers and generate free quote enquiries. The design prioritises real photos of completed work, genuine customer reviews, and a clear simple layout that homeowners can navigate without any friction.
+---
 
-Features
+## Screenshots
 
-Bold hero section — "South London's Trusted Home Painting Experts" with a prominent free quote CTA
-Before and after portfolio — Side-by-side image pairs of real completed jobs
-Rotating review carousel — 5-star customer testimonials with previous and next controls
-Full services list — Room repaints, kitchen cabinet refreshes, stairs, ceilings, feature walls, woodwork and trim, and colour consultation included
-Free quote CTA — Repeated throughout the page to drive enquiries at every scroll point
-Contact section — Phone, email, and Instagram with service area and availability info
-Mobile-first responsive design — Fully tested across all screen sizes
+<!-- Add images to docs/screenshots/ and uncomment. -->
+<!-- ![Homepage](docs/screenshots/home.png) -->
 
-Built With
+_Screenshots coming soon. For now, see the [live site](https://dean1234533.github.io/painting)._
 
-HTML5
-CSS3 — Flexbox and Grid
-Vanilla JavaScript — review carousel with previous and next controls
-Deployed on GitHub Pages
+---
 
-Services Covered
+## Overview
 
-Room repaints
-Kitchen cabinet refreshes
-Stairs including repairs
-Ceilings only
-Feature walls
-Woodwork and trim
-Colour consultation included
+This site was built for a local tradesperson who needed an online presence that
+builds trust and generates free-quote enquiries. The design puts real photos of
+completed work and genuine customer reviews first, in a simple layout that
+homeowners can find their way around easily.
 
-What I Learned
+## Features
 
-Building a business website for a local tradesperson focused on generating real enquiries
-Implementing a JavaScript review carousel from scratch
-Using before-and-after imagery effectively to demonstrate quality of work
-Laying out a service page that clearly communicates what's on offer to non-technical users
+- A **bold hero** with a prominent free-quote call to action
+- A **before and after portfolio** of real completed jobs
+- A **rotating review carousel** with previous and next controls, written from
+  scratch
+- A **full services list**: room repaints, kitchen cabinets, stairs, ceilings,
+  feature walls, woodwork and trim, and colour consultation
+- A **contact form** powered by EmailJS
+- Privacy policy and terms pages
+- A mobile-first, responsive design
 
-Getting Started
+## Tech stack
 
+- HTML5
+- CSS3, using Flexbox and Grid
+- Vanilla JavaScript for the navigation, slider, and carousel
+- EmailJS for the contact form
+- Deployed on GitHub Pages
+
+## Run locally
+
+```bash
 git clone https://github.com/dean1234533/painting.git
 cd painting
-Open index.html in your browser — no build step or dependencies required.
+open index.html   # no build step or dependencies required
+```
 
-Contact
+## What I learned
 
-Built by Dean Burt
-Email: Deanburt1308@gmail.com
-LinkedIn: https://www.linkedin.com/in/db-s-workouts/
-Portfolio: https://dean1234533.github.io/Project-Portfolio/
+- Building a business website for a local tradesperson that brings in real
+  enquiries
+- Writing a JavaScript review carousel from scratch
+- Using before-and-after images to show the quality of the work
+- Laying out a services page that non-technical visitors can understand quickly
+
+---
+
+## Author
+
+Built by **Dean Da Dev**, a UK full-stack developer building web apps, websites,
+and AI tools.
+
+🌐 [dean-da-dev.co.uk](https://www.dean-da-dev.co.uk/) · 💼 [More projects](https://www.dean-da-dev.co.uk/portfolio) · 🐙 [GitHub](https://github.com/dean1234533)
